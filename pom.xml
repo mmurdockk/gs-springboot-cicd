@@ -37,5 +37,19 @@
             </plugin>
         </plugins>
     </build>
+	
+	<!-- Distribution -->
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>Artifactory Releases</name>
+			<url>http://localhost:8081/artifactory/libs-release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Artifactory Snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
