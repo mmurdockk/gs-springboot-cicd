@@ -8,7 +8,7 @@ import io.gatling.jdbc.Predef._
 class RecordedSimulation extends Simulation {
 
 	val httpProtocol = http
-		.baseURL("http://10.221.192.79:8080")
+		.baseURL("http://40.68.116.191:8080")
 		.inferHtmlResources()
 		.acceptHeader("image/webp,image/apng,image/*,*/*;q=0.8")
 		.acceptEncodingHeader("gzip, deflate")
@@ -31,5 +31,5 @@ class RecordedSimulation extends Simulation {
 			.get("/favicon.ico")
 			.headers(headers_1)))
 
-	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	setUp(scn.inject(atOnceUsers(500))).protocols(httpProtocol)
 }
