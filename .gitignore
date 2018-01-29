@@ -1,2 +1,7 @@
-target.
-.idea/
+.idea
+*.iws
+*.iml
+*.ipr
+.slcache
+
+/target
